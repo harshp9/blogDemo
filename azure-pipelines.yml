@@ -14,15 +14,15 @@ variables:
 
 
 steps:
-
 - task: Docker@2
   inputs:
-    containerRegistry: 
+    containerRegistry: 'RedHat Catalog Registry'
     command: 'login'
-- task: Docker@2
-  inputs:
-    containerRegistry: 'RedHat Registry'
-    repository: 'RedHat Image Repo'
-    command: 'build'
-    Dockerfile: '**/Dockerfile'
+
+# - task: Docker@2
+#   inputs:
+#     containerRegistry: 'RedHat Registry'
+#     repository: 'RedHat Image Repo'
+#     command: 'build'
+#     Dockerfile: '**/Dockerfile'
     
