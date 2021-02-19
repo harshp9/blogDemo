@@ -29,11 +29,11 @@ steps:
     containerRegistry: 'Internal OCP Repo'
     command: 'login'
 
-# - task: Docker@2
-#   inputs:
-#     containerRegistry: 'Internal OCP Repo'
-#     repository: 'demoblog/demoblog'
-#     command: 'buildAndPush'
-#     Dockerfile: '**/Dockerfile'
-#     tags: latest
+- task: Docker@2
+  inputs:
+    containerRegistry: 'Internal OCP Repo'
+    repository: 'demoblog/demoblog'
+    command: 'build'
+    Dockerfile: '**/Dockerfile'
+    tags: latest
 
