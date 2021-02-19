@@ -33,7 +33,7 @@ steps:
   inputs:
     containerRegistry: 'Internal OCP Repo'
     repository: 'demoblog/demoblog'
-    command: 'build'
+    command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
     tags: latest
 
